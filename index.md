@@ -1,7 +1,9 @@
 ---
 layout: default
-title: 'Home'
+title: "Home"
+description: "Alucebur's personal website"
 ---
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/alucebur/alucebur.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
@@ -9,7 +11,7 @@ You can use the [editor on GitHub](https://github.com/alucebur/alucebur.github.i
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 This is a test:
-- 2019-06-17 - [Test1](./_posts/2019-06-17-test1.md)
+- [Test1](./_posts/2019-06-17-test1.md)
 
 This is another test:
 - [Hello world](./hello-world/)

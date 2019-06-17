@@ -1,7 +1,7 @@
 # TODO
 - [x] 404 pages in subfolders, if possible
 - [ ] Set categories and tags
-- [ ] 404 pages in projects
+- [x] 404 pages in projects
 - [x] download tarballs from project pages
 - [ ] create and set layouts
 - [ ] check theme options

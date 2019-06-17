@@ -1,10 +1,10 @@
 # TODO
 - [x] 404 pages in subfolders, if possible
-- [] Set categories and tags
-- [] 404 pages in projects
-- [] download tarballs from project pages
-- [] create and set layouts
-- [] check theme options
+- [ ] Set categories and tags
+- [ ] 404 pages in projects
+- [x] download tarballs from project pages
+- [ ] create and set layouts
+- [ ] check theme options
 
 Some pages to check:
 - https://github.com/pages-themes/slate

@@ -1,4 +1,4 @@
-# alucebur.github.io
-This is my personal blog.
+# Welcome to my personal blog repository
 
-Here I will link my projects and some posts related to programming
+In my blog I will link my projects and some posts related to programming.  
+Visit it at [alucebur.github.io](alucebur.github.io)

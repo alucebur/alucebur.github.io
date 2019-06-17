@@ -1,9 +1,3 @@
 theme: jekyll-theme-slate
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-      title: "Alucebur Was Here"
-      description: "I will be posting here different stuff about my projects"
+title: "Alucebur Was Here"
+description: "I will be posting here different stuff about my projects"

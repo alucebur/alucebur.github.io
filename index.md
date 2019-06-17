@@ -7,6 +7,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 This is a test:
 - 2019-06-17 - [Test1](./posts/2019-06-17-test1.md)
 
+This is another test:
+- [Hello world](./hello-world/)
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for

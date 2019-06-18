@@ -37,13 +37,14 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
+        {% if site.github.is_project_page %}{}
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        {% if site.github.is_project_page %}
+        {% if site.github.baseurl == '/blog' %}{% include related_posts.html %}{$ else $}{{ site.github.baseurl }}{% endif %}
         <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>

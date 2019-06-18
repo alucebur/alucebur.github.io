@@ -1,0 +1,40 @@
+---
+layout: default
+permalink: /tags/
+title: Tags
+---
+
+<div id="archives">
+{% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    <p></p>
+
+    <h3 class="category-head">{{ category_name }}</h3>
+    <a name="{{ category_name | slugize }}"></a>
+    {% for post in site.categories[category_name] %}
+    <article class="archive-item">
+      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>
+
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign site_tags = site_tags | split: ',' %}
+
+{% assign tag_count = 0 %}
+{% for tag in site_tags %}
+{% assign tag_count = tag_count | plus: site.tags[tag].size %}
+{% endfor %}
+
+{% for tag in tags %}
+{% assign rel_tag_size = site.tags[tag].size | times: 4.0 | divided_by: tag_count | plus: 1 %}
+<span style="white-space: nowrap; font-size: {{ rel_tag_size }}em; padding: 0.6em;">
+	<a href="{{ site.baseurl }}/tags/{{ tag | slugize }}" class="tag">{{ tag | slugize }}
+		<span>({{ site.tags[tag].size }})</span>
+	</a>
+</span>
+{% endfor %}

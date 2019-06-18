@@ -1,4 +1,10 @@
 theme: jekyll-theme-slate
 title: "Alucebur Was Here"
 description: "I will be posting here different stuff about my projects"
-permalink: none
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /blog/:categories/:title:output_ext

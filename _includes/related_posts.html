@@ -1,10 +1,11 @@
 <div class="relatedPosts">
 
-<h4>You May Also Enjoy</h4>
+<h4>You May Also Enjoy:</h4>
 
 {% assign maxRelated = 4 %}
-{% assign minCommonTags =  2 %}
+{% assign minCommonTags =  1 %}
 {% assign maxRelatedCounter = 0 %}
+{% assign empty = TRUE %}
 
   {% for post in site.posts %}
 
@@ -22,6 +23,7 @@
     {% endfor %}
 
     {% if sameTagCount >= minCommonTags %}
+      {% if empty %}{% assign empty = FALSE %}{% endif %}
       <div>
       <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></h5>
       </div>
@@ -32,5 +34,9 @@
     {% endif %}
 
   {% endfor %}
-
+  {% if empty %}
+    <div>
+      <h5>Nothing here yet. Give me time!</h5>
+     </div>
+  {% endif %}
 </div>

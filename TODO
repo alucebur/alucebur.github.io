@@ -2,8 +2,7 @@
 - [ ] Implement categories and tags (sidebar)
 - [ ] Twitter/github link, bio... (sidebar)
 - [ ] Create and set layouts
-- [ ] Link at home in project pages not working (they use different layout file)
-- [ ] Change blog urls? (permalink: /:categories/:year/:month/:day/:title:output_ext => permalink: none)
+- [x] Change blog urls? (permalink: /:categories/:year/:month/:day/:title:output_ext => permalink: none)
 - [ ] RSS Feed (not in a hurry...)
 
 Some pages to check:

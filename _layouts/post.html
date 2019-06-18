@@ -10,9 +10,14 @@ layout: default
             <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
             <!-- SHOW TAGS -->
             <p class="post-meta" style="text-align: justify;">
-		      Tags:
-		      {% assign tags = page.tags | sort %}
-              {% include tagcloud.html %}
+              Tags:
+              {% for tag in page.tags %}
+		<span style="white-space: nowrap; padding: 0.6em;">
+		  <a href="{{ site.baseurl }}/tags/{{ tag | slugize }}" class="tag">{{ tag | slugize }}
+		    <span>({{ site.tags[tag].size }})</span>
+		  </a>
+		</span>
+              {% endfor %}
             </p>
           </header>
           <div class="post-content" itemprop="articleBody">

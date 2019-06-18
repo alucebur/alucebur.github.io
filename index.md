@@ -17,3 +17,8 @@ List of projects:
 {% for repository in site.github.public_repositories %}
   * [{{ repository.name }}]({{ site.url }}/{{ repository.name }}) - In Github: [{{ repository.name }}]({{ repository.html_url }})
 {% endfor %}
+
+{% for post in site.posts %}
+  [{{ post.title }}]({{ post.url }})
+  {{ post.excerpt }}
+{% endfor %}

@@ -8,3 +8,4 @@ defaults:
       type: "posts"
     values:
       permalink: /blog/:categories/:title:output_ext
+      layout: post

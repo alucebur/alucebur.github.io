@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Home"
+title: ""
 description: "Alucebur's personal website"
 ---
 

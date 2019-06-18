@@ -23,7 +23,7 @@
     {% endfor %}
 
     {% if sameTagCount >= minCommonTags %}
-      {% if empty %}{% assign empty = FALSE %}{% endif %}
+      {% if empty %}{% assign empty = false %}{% endif %}
       <div>
       <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></h5>
       </div>

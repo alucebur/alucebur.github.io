@@ -37,11 +37,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
-        -
-        {% if post %}{% include related_posts.html %}{% endif %}
-        {{ post }}
-        {{ page.github.baseurl }}
-        -
+        {% if is_post %}{% include related_posts.html %}{% endif %}
       </section>
     </div>
 

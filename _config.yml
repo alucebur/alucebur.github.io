@@ -1,11 +1,26 @@
 theme: jekyll-theme-slate
 title: "Alucebur Was Here"
 description: "I will be posting here different stuff about my projects"
+author:
+    twitter: alucebur
+twitter:
+  username: alucebur
+  card: summary
+logo: /assets/images/logo.png
+social:
+  name: alucebur
+  links:
+    - https://twitter.com/alucebur
+    - https://github.com/alucebur
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       permalink: /blog/:categories/:title:output_ext
       layout: post
+
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/logo-bg.png

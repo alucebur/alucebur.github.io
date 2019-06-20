@@ -13,7 +13,7 @@ layout: default
               Tags:
               {% for tag in page.tags %}
 		<span style="white-space: nowrap; padding: 0.6em;">
-		  <a href="{{ site.baseurl }}/tags/{{ tag | slugize }}" class="tag">{{ tag | slugize }}
+		  <a href="{{ site.baseurl }}/tags#{{ tag | slugize }}" class="tag">{{ tag | slugize }}
 		    <span>({{ site.tags[tag].size }})</span>
 		  </a>
 		</span>

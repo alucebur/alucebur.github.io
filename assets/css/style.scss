@@ -3,6 +3,9 @@
 
 @import "jekyll-theme-slate";
 
+body {
+    font-size: 16px;
+}
 .pager {
     margin: 40px 0 20px 0;
     padding: 0;
@@ -54,5 +57,8 @@ h3.tag-head, h3.category-head {
   padding-right: 8px;
 }
 .post-meta {
-  margin-bottom: 36px;
+ color: #808080;
+ font-size: 18px;
+ font-style: italic;
+ margin: 0 0 10px;
 }

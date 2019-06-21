@@ -14,15 +14,18 @@
 .pager li {
     display: inline;
 }
+.pager .next {
+    float: left;
+}
+.pager .previous {
+    float: right;
+}
 .pager li a {
     border: 1px solid #000;
     padding: 10px 20px;
     background: #444;
     color: #fff;
     text-decoration: none;
-}
-.pager .previous {
-    float: right;
 }
 .pager li a:hover {
     color: #fff;

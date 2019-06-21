@@ -31,3 +31,28 @@
     background: #0090ff ;
     border: 1px solid #0090ff ;
 }
+.archive-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace
+}
+h3.tag-head {
+  font-size: 26px;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0px;
+  color: #555;
+  text-transform: uppercase;
+}
+.page-heading {
+  text-transform: uppercase;
+  font-size: 48px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+.tag-head::before {
+  content: "•";
+  padding-right: 8px;
+}
+.post-meta {
+  margin-bottom: 36px;
+}

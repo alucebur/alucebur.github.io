@@ -1,0 +1,31 @@
+---
+---
+
+@import "jekyll-theme-slate";
+
+.row {
+    padding-bottom: 15px;
+}
+.pager {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+.pager li {
+    display: inline;
+}
+.pager li a {
+    border: 1px solid #000;
+    padding: 10px 20px;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+}
+.pager .previous {
+    float: right;
+}
+.pager li a:hover {
+    color: #fff;
+    background: #0090ff ;
+    border: 1px solid #0090ff ;
+}

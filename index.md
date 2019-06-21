@@ -19,6 +19,6 @@ List of projects:
 {% endfor %}
 
 {% for post in site.posts %}
-  <p class='post-title'>[{{ post.title }}]({{ post.url }})</p>
+  <p class='post-title'><a href='{{ post.url }}'>{{ post.title }}]<a></p>
   {{ post.excerpt }}
 {% endfor %}

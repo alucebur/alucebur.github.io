@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Second Test'
+title: 'Second Test with a long long title that makes no sense'
 description: 'Running some tests to learn'
 date: '2019-06-18 22:08:01 +0100'
 categories: [testing]

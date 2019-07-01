@@ -1,7 +1,7 @@
 # TODO
 - [ ] Implement categories and tags (sidebar)
 - [ ] Twitter/github link, bio... (sidebar)
-- [ ] Create and set layouts
+- [x] Create and set layouts
 - [x] Change blog urls? (permalink: /:categories/:year/:month/:day/:title:output_ext => permalink: none)
 - [ ] RSS Feed (not in a hurry...)
 

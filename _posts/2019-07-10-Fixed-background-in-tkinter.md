@@ -4,7 +4,7 @@ title: 'Fixed background in Tkinter'
 description: 'Tkinter headaches'
 date: '2019-07-10 16:13:41 +0200'
 categories: []
-tags: [Tkinter]
+tags: [tkinter, python]
 ---
 Past week I joined Python Discord group and started lurking around. One user (hi Sham!) posted a chunk of code
 using tkinter module in one of the help channels requesting some assistance, and I got interested since I had

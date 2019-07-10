@@ -7,8 +7,9 @@ categories: []
 tags: [Tkinter]
 ---
 Past week I joined Python Discord group and started lurking around. One user (hi Sham!) posted a chunk of code
-using tkinter module, and I got interested since I had been working with it recently, so I set a new virtual
-environment, installed tkinter and pillow on it, and got to work.
+using tkinter module in one of the help channels requesting some assistance, and I got interested since I had
+been working with it recently, so I set a new virtual environment, installed tkinter and pillow on it, and got
+to work.
 
 We needed a window with a background image and many buttons, so many that we had to scroll down to see them all.
 

@@ -6,17 +6,17 @@ date: '2019-07-10 16:13:41 +0200'
 categories: []
 tags: [Tkinter]
 ---
-Tkinter has given me a lot of headaches each time I tried to put my hands on it T_T"
-
 Past week I joined Python Discord group and started lurking around. One user (hi Sham!) posted a chunk of code
 using tkinter module, and I got interested since I had been working with it recently, so I set a new virtual
 environment, installed tkinter and pillow on it, and got to work.
 
 We needed a window with a background image and many buttons, so many that we had to scroll down to see them all.
+
+![Many buttons](https://i.imgur.com/9Zqxinm.png)
+
 But the background image was too short and it finished before all buttons were revealed, so an ugly white gap appeared.
 Enlarging the background image was not an option because it got distorted too much.
 
-![Many buttons](https://i.imgur.com/9Zqxinm.png)
 ![Problem](https://i.imgur.com/nrVP6U6.png)
 
 The solution I tried was faking a fixed background image by moving the image each time we scrolled, so the

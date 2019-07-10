@@ -10,7 +10,7 @@ List of projects:
 
 <hr/>
 
-{% for post in site.posts %}
+{% for post in site.posts if post.category != 'testing' %}
   <p class='post-title'><a href='{{ post.url }}'>{{ post.title }}</a></p>
   <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
   {{ post.excerpt }}

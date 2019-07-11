@@ -58,7 +58,7 @@ class Canvas(tk.Canvas):
             pos.pop(0)
         # How much we have scrolled. Negative if we scroll up
         dif = pos[1] - pos[0]
-        rel_pos = dif * 800  # height of the scroll region
+        rel_pos = dif * 800  # 800 is the height of the scroll region
         self.move(self.background_image, 0, rel_pos)
 
 

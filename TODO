@@ -3,7 +3,7 @@
 - [ ] Twitter/github link, bio... (sidebar)
 - [x] Create and set layouts
 - [x] Change blog urls? (permalink: /:categories/:year/:month/:day/:title:output_ext => permalink: none)
-- [ ] RSS Feed (not in a hurry...)
+- [x] RSS Feed (not in a hurry...)
 
 Some pages to check:
 - https://github.com/pages-themes/slate

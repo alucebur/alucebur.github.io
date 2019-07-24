@@ -7,28 +7,28 @@ categories: []
 tags: [pygame, python]
 ---
 
-Hello again. Lately I am learning to use pygame, the set of python modules to create videogames. I had a file with long quotes
+Hello again. Lately I am learning to use **pygame**, the set of Python modules to create videogames. I had a JSON file with long quotes
 that I wanted to show in the gameover screen of my game, but they didn't fit on the screen, so I started looking for a solution.
 Searching on the internet I found [this code](https://stackoverflow.com/questions/49432109/how-to-wrap-text-in-pygame-using-pygame-font-font#49433498)
-from **SpoonMeiser** in **StackOverflow** and adapted it to my needs.
+from **SpoonMeiser** in **StackOverflow** and I adapted it to my needs.
 
-The function render_wrapped_text divides the text into lines that fit the specified **max_width**, render them on
+The function `render_wrapped_text` divides the text into lines that fit the specified `max_width`, render them on
 a transparent surface of said width, and then returns that surface, along with the rectangle defining that surface area, so
-we can later place the text where we want to.
+we can place the text where we want to later.
 
-In this way, we can use functools.lru_cache(x) to cache the last x returning values, so the text is rendered just once,
+In this way, we can use `functools.lru_cache(x)` to cache the last x returning values, so the text is rendered just once,
 then the cache returns the values instead. This LRU cache uses the arguments passed to the function as key, so they
-need to be hashable.
+**need to be hashable**.
 
-The result of calling the function with **centered**=False:
+The result of calling the function with `centered=False`:
 
 ![Not centered text](https://i.imgur.com/PLasJh7.png)
 
-And with centered=True we get this:
+With `centered=True` we get this:
 
 ![Centered text](https://i.imgur.com/2eKQNCy.png)
 
-The code I am using:
+And the code I am using:
 
 ```python
 from functools import lru_cache
@@ -108,7 +108,7 @@ def run_example(width: int, height: int, fps: int):
                 running = False
 
         screen.fill(DARK_GREY)
-        rd_text, rd_rect = render_wrapped_text(long_text, font, WHITE, False,
+        rd_text, rd_rect = render_wrapped_text(long_text, font, WHITE, True,
                                                10, width-150)
         rd_rect.centerx, rd_rect.centery = width//2, height//2
         screen.blit(rd_text, rd_rect)

@@ -12,7 +12,7 @@ that I wanted to show in the gameover screen of my game, but they didn't fit on 
 Searching on the internet I found [this code](https://stackoverflow.com/questions/49432109/how-to-wrap-text-in-pygame-using-pygame-font-font#49433498)
 from **SpoonMeiser** in **StackOverflow** and I adapted it to my needs.
 
-The function `render_wrapped_text` divides the text into lines that fit the specified `max_width`, render them on
+The function `render_wrapped_text` divides the text into lines that fit the specified `max_width`, renders them on
 a transparent surface of said width, and then returns that surface, along with the rectangle defining that surface area, so
 we can place the text where we want to later.
 

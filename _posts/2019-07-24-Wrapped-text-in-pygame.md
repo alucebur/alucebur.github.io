@@ -3,6 +3,7 @@ layout: post
 title: 'Wrapped text in Pygame'
 description: 'Playing with pygame'
 date: '2019-07-24 16:13:50 +0200'
+edited: '2019-07-25 15:30:13 +0200'
 categories: []
 tags: [pygame, python]
 ---
@@ -30,6 +31,7 @@ With `centered=True` we get this:
 
 And the code I am using:
 
+**Update 2019/07/25**: Modified script to manage too long words and empty text.
 ```python
 from functools import lru_cache
 from typing import Tuple, NewType
@@ -52,23 +54,31 @@ def render_wrapped_text(text: str, font: pygame.freetype.Font,
     words = text.split()
     lines = []
     lines_h = 0
+    line_w, line_h = 0, 0
 
     # Separate text into lines, storing each line size
     while words:
         line_words = []
         while words:
-            line_words.append(words.pop(0))
             _, _, l_w, l_h = font.get_rect(
                 ' '.join(line_words + words[:1]))
             if l_w > max_width:
                 break
             line_w, line_h = l_w, l_h
-        lines_h += line_h
-        lines.append((' '.join(line_words), (line_w, line_h)))
+            line_words.append(words.pop(0))
+        if line_words:
+            lines_h += line_h
+            lines.append((' '.join(line_words), (line_w, line_h)))
+        else:
+            # Word is too long, split it in half
+            long_word = words.pop(0)
+            words.insert(0, long_word[:len(long_word)//2])
+            words.insert(1, long_word[len(long_word)//2:])
 
     # Create transparent surface and rectangle to be returned
     final_height = lines_h + (len(lines) - 1) * offset_y if lines else lines_h
     final_surf = pygame.Surface((max_width, final_height), pygame.SRCALPHA, 32)
+    final_surf.convert()
     final_rect = final_surf.get_rect()
 
     # Render lines on the surface
